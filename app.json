@@ -1,0 +1,30 @@
+{
+  "name": "Death note MD",
+  "description": "Death Node MD is the smartest multi-device WhatsApp user bot. Built for speed and flexibility, it's packed with powerful features to automate your WhatsApp experience like never before. ⚡️",
+  "repository": "https://github.com/cdt-main/death-note-md",
+  "keywords": ["baileys", "multidevice", "whatsapp","bot","cdt"],
+  "logo": "https://your-domain.com/logo.png",
+  "env": {
+    "NODE_ENV": {
+      "description": "The environment for the application (e.g., development, production).",
+      "value": "production"
+    },
+    "DATABASE_URL": {
+      "description": "The connection URL for the PostgreSQL database.",
+      "required": true
+    },
+    "SESSION_SECRET": {
+      "description": "A secret key for signing the session ID cookie.",
+      "generator": "secret"
+    },
+    "API_KEY": {
+      "description": "API Key for an external service.",
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
